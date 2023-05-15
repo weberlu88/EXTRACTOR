@@ -1,0 +1,26 @@
+digraph "mygraph.dot" {
+rankdir="LR"
+size="9"
+fixedsize="false"
+splines="true"
+nodesep=0.3
+ranksep=0
+fontsize=10
+overlap="scalexy"
+engine= "neato"
+	"'*'" [node_type=file shape=ellipse]
+	"'*'" [node_type=file shape=ellipse]
+	"*" -> "*" [label="1: connect"]
+	"'/-keylogger-/'" [node_type=file shape=ellipse]
+	"'*'" [node_type=file shape=ellipse]
+	"*" -> "/-keylogger-/" [label="2: have"]
+	"'*'" [node_type=file shape=ellipse]
+	"'*'" [node_type=file shape=ellipse]
+	"*" -> "*" [label="3: logged"]
+	"'*'" [node_type=file shape=ellipse]
+	"'*'" [node_type=file shape=ellipse]
+	"*" -> "*" [label="4: following"]
+	"'exe-0ad199d6.pf'" [node_type=file shape=ellipse]
+	"'Authorization.exe'" [node_type=Process shape=box]
+	"'Authorization.exe'" -> "'exe-0ad199d6.pf'" [label="5: write"]
+}

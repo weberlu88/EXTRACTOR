@@ -12,7 +12,7 @@ fpath = "./Data/lists.ini"
 
 def load_lists(fpath):
     config = ConfigParser.ConfigParser()
-    with open(fpath) as f:
+    with open(fpath, encoding = 'utf-8') as f:
         config.readfp(f)
     for ind_type in config.sections():
         try:
